@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ChubaoFS</title>
+  
+  <subtitle>The ChubaoFS Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://chubao.io/"/>
+  <updated>2019-10-14T11:22:12.325Z</updated>
+  <id>http://chubao.io/</id>
+  
+  <author>
+    <name>zhuzhengyi</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ChubaoFS talk at Intel IPDC summit 2019</title>
+    <link href="http://chubao.io/2019/09/10/2019-09-10%20ChubaoFS%20talk%20at%20Intel%20IPDC%20summit%202019/"/>
+    <id>http://chubao.io/2019/09/10/2019-09-10 ChubaoFS talk at Intel IPDC summit 2019/</id>
+    <published>2019-09-09T16:00:00.000Z</published>
+    <updated>2019-10-14T11:22:12.325Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ChubaoFS-talk-at-Intel-IPDC-summit-2019"><a href="#ChubaoFS-talk-at-Intel-IPDC-summit-2019" class="headerlink" title="ChubaoFS talk at Intel IPDC summit 2019"></a>ChubaoFS talk at Intel IPDC summit 2019</h2><p>As the invitation from Intel, our speaker sharing the main architecture design of ChubaoFS and the key features.</p><a id="more"></a><p><img src="/2019/09/10/2019-09-10 ChubaoFS talk at Intel IPDC summit 2019/e5c450d74a9c0c67.jpg" alt="img"></p><ul><li>High performance: Optimized for both large and small files.</li><li>Multi-Tenancy: Share the whole storage and resource utilization ratio.</li><li>General- Purpose Storage Engine: Support both sequential and random read/write.</li><li>Highly Scalable: Individual meta and data node clusters. Scales with meta and data partitions increase.</li><li>POSIX filesystem APIs: Complaint whenever possible, and compromise between semantics and performance.</li></ul><p>Meanwhile ChubaoFS user scenarios were shared and increasing number of people interested in these.</p><p><img src="/2019/09/10/2019-09-10 ChubaoFS talk at Intel IPDC summit 2019/c824f1c052644dc2.jpg" alt="img"></p><ul><li>Underlying storage for in-memory DB: Preserve snapshots.</li><li>Cloud storage for AI platform Training service: Decouple computing from storage.</li><li>Latency-sensitive services: Used for storing Nginx logs.</li><li>Elasticsearch: Takes care of replications and high availability.</li><li>Service MySQL: Running MySQL history tables on ChubaoFS directly since most of the requests are read.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ChubaoFS-talk-at-Intel-IPDC-summit-2019&quot;&gt;&lt;a href=&quot;#ChubaoFS-talk-at-Intel-IPDC-summit-2019&quot; class=&quot;headerlink&quot; title=&quot;ChubaoFS talk at Intel IPDC summit 2019&quot;&gt;&lt;/a&gt;ChubaoFS talk at Intel IPDC summit 2019&lt;/h2&gt;&lt;p&gt;As the invitation from Intel, our speaker sharing the main architecture design of ChubaoFS and the key features.&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CNCF Storage SIG Propose ChubaoFS to Sandbox</title>
+    <link href="http://chubao.io/2019/08/19/2019-08-19%20CNCF%20Storage%20SIG%20Propose%20ChubaoFS%20to%20Sandbox/"/>
+    <id>http://chubao.io/2019/08/19/2019-08-19 CNCF Storage SIG Propose ChubaoFS to Sandbox/</id>
+    <published>2019-08-18T16:00:00.000Z</published>
+    <updated>2019-10-14T11:22:24.078Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="CNCF-Storage-SIG-Propose-ChubaoFS-to-Sandbox"><a href="#CNCF-Storage-SIG-Propose-ChubaoFS-to-Sandbox" class="headerlink" title="CNCF Storage SIG Propose ChubaoFS to Sandbox"></a>CNCF Storage SIG Propose ChubaoFS to Sandbox</h2><p>As we presented the ChubaoFS project on Jun 12th CNCF Storage SIG meeting, today we really excited to get the feedback back from storage SIG, and they are happy to propose this project to Sandbox. Recording for the session is here: <a href="https://www.youtube.com/watch?v=l0-cUTPcpaQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=l0-cUTPcpaQ</a></p><a id="more"></a><p><img src="/2019/08/19/2019-08-19 CNCF Storage SIG Propose ChubaoFS to Sandbox/a54c28138e0ea413.jpg" alt="img"></p><p>ChubaoFS consists of a <em>metadata subsystem</em>, a <em>data subsystem</em>, and a <em>resource manager</em>, and can be accessed by different <em>clients</em> (as a set of application processes) hosted on the containers through different file system instances called <em>volumes</em>.</p><p>The metadata subsystem stores the file metadata, and consists of a set of <em>meta nodes</em>. Each meta node consists of a set of <em>meta partitions</em>.</p><p>The ChubaoFS questionnaire docs: <a href="https://docs.google.com/document/d/15Cnz3AHooqtml0xWhF6Hgei4gpWiRJbwoVCO_pN2z4c/edit?usp=sharing" target="_blank" rel="noopener">https://docs.google.com/document/d/15Cnz3AHooqtml0xWhF6Hgei4gpWiRJbwoVCO_pN2z4c/edit?usp=sharing</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;CNCF-Storage-SIG-Propose-ChubaoFS-to-Sandbox&quot;&gt;&lt;a href=&quot;#CNCF-Storage-SIG-Propose-ChubaoFS-to-Sandbox&quot; class=&quot;headerlink&quot; title=&quot;CNCF Storage SIG Propose ChubaoFS to Sandbox&quot;&gt;&lt;/a&gt;CNCF Storage SIG Propose ChubaoFS to Sandbox&lt;/h2&gt;&lt;p&gt;As we presented the ChubaoFS project on Jun 12th CNCF Storage SIG meeting, today we really excited to get the feedback back from storage SIG, and they are happy to propose this project to Sandbox. Recording for the session is here: &lt;a href=&quot;https://www.youtube.com/watch?v=l0-cUTPcpaQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=l0-cUTPcpaQ&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A Paper based on ChuboFS Published on SIGMOD 2019</title>
+    <link href="http://chubao.io/2019/07/02/2019-07-02%20A-Paper-based-on-ChuboFS-Published-on-SIGMOD-2019/"/>
+    <id>http://chubao.io/2019/07/02/2019-07-02 A-Paper-based-on-ChuboFS-Published-on-SIGMOD-2019/</id>
+    <published>2019-07-02T02:30:00.000Z</published>
+    <updated>2019-10-14T11:20:58.967Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ChubaoFS-on-KubeCon-China-2019"><a href="#ChubaoFS-on-KubeCon-China-2019" class="headerlink" title="ChubaoFS on KubeCon China 2019"></a>ChubaoFS on KubeCon China 2019</h2><p>Based on the open source project ChubaoFS design, the paper “CFS: A Distributed File System for Large Scale Container Platforms” has been published on the SIGMOD 2019 <a href="https://sigmod2019.org/sigmod_industry_list" target="_blank" rel="noopener">https://sigmod2019.org/sigmod_industry_list</a></p><a id="more"></a><p>Paper Link: <a href="https://dl.acm.org/citation.cfm?doid=3299869.3314046" target="_blank" rel="noopener">https://dl.acm.org/citation.cfm?doid=3299869.3314046</a></p><p><img src="/2019/07/02/2019-07-02 A-Paper-based-on-ChuboFS-Published-on-SIGMOD-2019/db9cf08e8b696e7a.jpg" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ChubaoFS-on-KubeCon-China-2019&quot;&gt;&lt;a href=&quot;#ChubaoFS-on-KubeCon-China-2019&quot; class=&quot;headerlink&quot; title=&quot;ChubaoFS on KubeCon China 2019&quot;&gt;&lt;/a&gt;ChubaoFS on KubeCon China 2019&lt;/h2&gt;&lt;p&gt;Based on the open source project ChubaoFS design, the paper “CFS: A Distributed File System for Large Scale Container Platforms” has been published on the SIGMOD 2019 &lt;a href=&quot;https://sigmod2019.org/sigmod_industry_list&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://sigmod2019.org/sigmod_industry_list&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ChubaoFS on KubeCon China 2019</title>
+    <link href="http://chubao.io/2019/06/24/2019-06-24%20ChubaoFS%20on%20KubeCon%20China%202019/"/>
+    <id>http://chubao.io/2019/06/24/2019-06-24 ChubaoFS on KubeCon China 2019/</id>
+    <published>2019-06-23T16:00:00.000Z</published>
+    <updated>2019-10-14T11:20:49.995Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ChubaoFS-on-KubeCon-China-2019"><a href="#ChubaoFS-on-KubeCon-China-2019" class="headerlink" title="ChubaoFS on KubeCon China 2019"></a>ChubaoFS on KubeCon China 2019</h2><p>Our Speakers gave a talk “ChubaoFS, Dsitributed file system native to large-scale container platform” on Mini Summit at KubeCon China 2019.</p><a id="more"></a><p><a href="https://www.opensds.io/mini-summit-kubecon-china-2019/" target="_blank" rel="noopener">https://www.opensds.io/mini-summit-kubecon-china-2019/</a></p><p><img src="/2019/06/24/2019-06-24 ChubaoFS on KubeCon China 2019/d78a3985357952da.jpg" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ChubaoFS-on-KubeCon-China-2019&quot;&gt;&lt;a href=&quot;#ChubaoFS-on-KubeCon-China-2019&quot; class=&quot;headerlink&quot; title=&quot;ChubaoFS on KubeCon China 2019&quot;&gt;&lt;/a&gt;ChubaoFS on KubeCon China 2019&lt;/h2&gt;&lt;p&gt;Our Speakers gave a talk “ChubaoFS, Dsitributed file system native to large-scale container platform” on Mini Summit at KubeCon China 2019.&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ChubaoFS is Listed on Cloud Native Landscape</title>
+    <link href="http://chubao.io/2019/05/13/2019-05-13%20ChubaoFS%20is%20Listed%20on%20Cloud%20Native%20Landscape/"/>
+    <id>http://chubao.io/2019/05/13/2019-05-13 ChubaoFS is Listed on Cloud Native Landscape/</id>
+    <published>2019-05-12T16:00:00.000Z</published>
+    <updated>2019-10-14T11:04:37.918Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ChubaoFS-is-Listed-on-Cloud-Native-Landscape"><a href="#ChubaoFS-is-Listed-on-Cloud-Native-Landscape" class="headerlink" title="ChubaoFS is Listed on Cloud Native Landscape"></a>ChubaoFS is Listed on Cloud Native Landscape</h2><p>After the first version released, we find there are increasing developers pay close attention to ChubaoFS project. Today we really happy to see ChubaoFS listed on the Cloud Native landscape!</p><a id="more"></a><p><a href="https://landscape.cncf.io/" target="_blank" rel="noopener">https://landscape.cncf.io/</a></p><p><img src="/2019/05/13/2019-05-13 ChubaoFS is Listed on Cloud Native Landscape/9fe3d3f8e264d8d0.jpg" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ChubaoFS-is-Listed-on-Cloud-Native-Landscape&quot;&gt;&lt;a href=&quot;#ChubaoFS-is-Listed-on-Cloud-Native-Landscape&quot; class=&quot;headerlink&quot; title=&quot;ChubaoFS is Listed on Cloud Native Landscape&quot;&gt;&lt;/a&gt;ChubaoFS is Listed on Cloud Native Landscape&lt;/h2&gt;&lt;p&gt;After the first version released, we find there are increasing developers pay close attention to ChubaoFS project. Today we really happy to see ChubaoFS listed on the Cloud Native landscape!&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ChubaoFS gave a talk on Hackathon</title>
+    <link href="http://chubao.io/2019/04/20/2019-04-20%20ChubaoFS%20gave%20a%20talk%20on%20Hackathon/"/>
+    <id>http://chubao.io/2019/04/20/2019-04-20 ChubaoFS gave a talk on Hackathon/</id>
+    <published>2019-04-19T16:00:00.000Z</published>
+    <updated>2019-10-14T11:20:37.716Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ChubaoFS-gave-a-talk-on-Hackathon"><a href="#ChubaoFS-gave-a-talk-on-Hackathon" class="headerlink" title="ChubaoFS gave a talk on Hackathon"></a>ChubaoFS gave a talk on Hackathon</h2><p>ChubaoFS gave a talk “CFS, native for large-scale container service platform of distributed file system” on the 9th China Open Source Hackathon.</p><a id="more"></a><p>ChubaoFS (Chubao File System, or CFS for short) is a distributed file system. It provides files system for upper-layer applications. The system POSIX interface has the characteristics:</p><ul><li>High availability,</li><li>High scalability,</li><li>Multi-tenancy,</li><li>Easy operation and maintenance.</li></ul><p>The original aim of the design is to provide a persistent storage solution for JD’s huge container clusters, while it also can be used as a general cloud storage for the business side. After more than half a year of stable online operation, it services more than 30 business applications. Business scenarios are not limited to backup storage of massive data, also included MySQL underlying storage (history table), Elastic search underlying storage, Hbase backend storage, AI platform model training backend storage, etc. At the same time, the design of CFS has its own unique characteristics, and the paper about the design has been accepted by SIGMOD2019 conference.</p><p><img src="/2019/04/20/2019-04-20 ChubaoFS gave a talk on Hackathon/c006a8f14a83be78.jpg" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ChubaoFS-gave-a-talk-on-Hackathon&quot;&gt;&lt;a href=&quot;#ChubaoFS-gave-a-talk-on-Hackathon&quot; class=&quot;headerlink&quot; title=&quot;ChubaoFS gave a talk on Hackathon&quot;&gt;&lt;/a&gt;ChubaoFS gave a talk on Hackathon&lt;/h2&gt;&lt;p&gt;ChubaoFS gave a talk “CFS, native for large-scale container service platform of distributed file system” on the 9th China Open Source Hackathon.&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ChubaoFS First Release is Coming</title>
+    <link href="http://chubao.io/2019/04/02/2019-04-02%20ChubaoFS%20First%20Release%20is%20Coming/"/>
+    <id>http://chubao.io/2019/04/02/2019-04-02 ChubaoFS First Release is Coming/</id>
+    <published>2019-04-01T16:00:00.000Z</published>
+    <updated>2019-10-14T11:22:33.305Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ChubaoFS-First-Release-is-Coming"><a href="#ChubaoFS-First-Release-is-Coming" class="headerlink" title="ChubaoFS First Release is Coming"></a>ChubaoFS First Release is Coming</h2><p>ChubaoFS (ChubaoFS file system, or CFS) is a distributed file system for cloud native applications. It is designed to provide persistent storage solution for container cluster and also be used as general cloud storage for business parties.</p><a id="more"></a><p>The first release version has been published on Github: <a href="https://github.com/chubaofs/chubaofs/releases/tag/v1.0.0" target="_blank" rel="noopener">https://github.com/chubaofs/chubaofs/releases/tag/v1.0.0</a></p><p>The key features are included:</p><ul><li>High performance for both large files and small files</li><li>General purpose storage engine</li><li>Multi-tenancy</li><li>POSIX-compliant APIs</li><li>High scalability with separated metadata cluster</li></ul><p><img src="/2019/04/02/2019-04-02 ChubaoFS First Release is Coming/cd2bff2d7bd92f07.jpg" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ChubaoFS-First-Release-is-Coming&quot;&gt;&lt;a href=&quot;#ChubaoFS-First-Release-is-Coming&quot; class=&quot;headerlink&quot; title=&quot;ChubaoFS First Release is Coming&quot;&gt;&lt;/a&gt;ChubaoFS First Release is Coming&lt;/h2&gt;&lt;p&gt;ChubaoFS (ChubaoFS file system, or CFS) is a distributed file system for cloud native applications. It is designed to provide persistent storage solution for container cluster and also be used as general cloud storage for business parties.&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
